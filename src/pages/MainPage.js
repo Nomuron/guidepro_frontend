@@ -2,7 +2,7 @@ import React from "react";
 import * as Yup from "yup";
 import {useFormik} from "formik";
 import CryptoES from "crypto-es";
-import {backendUrl, cryptoKey} from "../utils/constants";
+import {backendUrl} from "../utils/constants";
 import axios from "axios";
 
 
@@ -43,11 +43,9 @@ export const MainPage = () => {
                 .required("Powtórzone hasło jest wymagane")
         }),
         onSubmit: (values, {resetForm}) => {
-            // console.log(CryptoES.AES.encrypt(values.password, cryptoKey).toString());
-            // console.log(CryptoES.AES.decrypt("U2FsdGVkX1+VcHb/0ZDL7Y9XS3U/SgTK70wqfwUHiDg=", cryptoKey).toString(CryptoES.enc.Utf8))
             axios.post(backendUrl + "/register", {
                 login: values.login,
-                password: CryptoES.AES.encrypt(values.password, cryptoKey).toString(),
+                password: CryptoES.MD5(values.password).toString(),
                 name: values.name,
                 surname: values.surname,
                 email: values.email,
@@ -56,7 +54,6 @@ export const MainPage = () => {
             // resetForm();
         }
     })
-
     return (
         <div className="App">
             Hello World
