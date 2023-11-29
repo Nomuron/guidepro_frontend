@@ -20,7 +20,7 @@ export const MainPage = () => {
         validationSchema: Yup.object({
             login: Yup.string().trim()
                 .min(3, "Login musi mieć co najmniej 3 znaki")
-                .max(50, "Login musi miec conajmniej 50 znaków")
+                .max(50, "Login musi miec maksymalnie 50 znaków")
                 .required("Login jest wymagany"),
             email: Yup.string().trim()
                 .matches(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i, "Niepoprawna struktura adresu email")
@@ -39,7 +39,7 @@ export const MainPage = () => {
                     "1 cyfrę i 1 znak specjalny.")
                 .required("Hasło jest wymagane"),
             repeatedPassword: Yup.string().trim()
-                .oneOf([Yup.ref("password"), null], "Hasła piowinny być identyczne")
+                .oneOf([Yup.ref("password"), null], "Hasła powinny być identyczne")
                 .required("Powtórzone hasło jest wymagane")
         }),
         onSubmit: (values, {resetForm}) => {
@@ -51,7 +51,7 @@ export const MainPage = () => {
                 email: values.email,
                 user_type: "user"
             }).then((response) => console.log(response))
-            // resetForm();
+            resetForm();
         }
     })
     return (
@@ -61,27 +61,29 @@ export const MainPage = () => {
                 <label htmlFor="login">Login: </label>
                 <input id="login" type="text" className="form-control" {...formik.getFieldProps("login")}/>
                 {formik.touched.login && formik.errors.login ? (<div>{formik.errors.login}</div>) : null}
-                <br />
+                <br/>
                 <label htmlFor="email">Email: </label>
                 <input id="email" type="email" className="form-control" {...formik.getFieldProps("email")}/>
                 {formik.touched.email && formik.errors.email ? (<div>{formik.errors.email}</div>) : null}
-                <br />
+                <br/>
                 <label htmlFor="name">Imię: </label>
                 <input id="name" type="text" className="form-control" {...formik.getFieldProps("name")}/>
                 {formik.touched.name && formik.errors.name ? (<div>{formik.errors.name}</div>) : null}
-                <br />
+                <br/>
                 <label htmlFor="surname">Nazwisko: </label>
                 <input id="surname" type="text" className="form-control" {...formik.getFieldProps("surname")}/>
                 {formik.touched.surname && formik.errors.surname ? (<div>{formik.errors.surname}</div>) : null}
-                <br />
+                <br/>
                 <label htmlFor="password">Hasło: </label>
                 <input id="password" type="password" className="form-control" {...formik.getFieldProps("password")}/>
                 {formik.touched.password && formik.errors.password ? (<div>{formik.errors.password}</div>) : null}
-                <br />
+                <br/>
                 <label htmlFor="repeatedPassword">Powtórz hasło: </label>
-                <input id="repeatedPassword" type="password" className="form-control" {...formik.getFieldProps("repeatedPassword")}/>
-                {formik.touched.repeatedPassword && formik.errors.repeatedPassword ? (<div>{formik.errors.repeatedPassword}</div>) : null}
-                <br />
+                <input id="repeatedPassword" type="password"
+                       className="form-control" {...formik.getFieldProps("repeatedPassword")}/>
+                {formik.touched.repeatedPassword && formik.errors.repeatedPassword ? (
+                    <div>{formik.errors.repeatedPassword}</div>) : null}
+                <br/>
                 <button type="submit" className="btn btn-primary">Zarejestruj</button>
             </form>
         </div>

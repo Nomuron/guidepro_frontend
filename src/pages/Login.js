@@ -24,7 +24,7 @@ export const Login = () => {
                 login: values.login,
                 password: CryptoES.MD5(values.password).toString(),
             }).then((response) => console.log(response))
-            // resetForm();
+            resetForm();
         }
     })
     return (
@@ -34,11 +34,11 @@ export const Login = () => {
                 <label htmlFor="login">Login: </label>
                 <input id="login" type="text" className="form-control" {...formik.getFieldProps("login")}/>
                 {formik.touched.login && formik.errors.login ? (<div>{formik.errors.login}</div>) : null}
-                <br />
+                <br/>
                 <label htmlFor="password">Hasło: </label>
                 <input id="password" type="password" className="form-control" {...formik.getFieldProps("password")}/>
                 {formik.touched.password && formik.errors.password ? (<div>{formik.errors.password}</div>) : null}
-                <br />
+                <br/>
                 <button type="submit" className="btn btn-primary">Zarejestruj</button>
             </form>
         </div>
