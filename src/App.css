@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24;
+  font-family: 'Material Symbols Outlined';
+  font-size: 30px; /* Rozmiar czcionki */
+  font-weight: 400; /* Grubość czcionki */
+  /* Dodaj dodatkowe ustawienia stylów, jeśli są wymagane */
+}
