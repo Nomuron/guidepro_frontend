@@ -1,6 +1,6 @@
 import React from "react";
 import {useState} from 'react';
-import {Segmented, SegmentedButton,} from 'konsta/react';
+import {Segmented, SegmentedButton, Button} from 'konsta/react';
 
 export const Filters = () => {
 
@@ -10,18 +10,27 @@ export const Filters = () => {
         <div className="navbar bg-customDark sticky-top">
             <div id="filters" className="col-md-12 col-lg-12 position-relative container-fluid"
                  style={{height: '50px'}}>
-                <div className="col-md-2 col-lg-2"></div>
-                <div className=" col-md-6 col-lg-6"></div>
-                <div className=" col-md-2 col-lg-2">
+                <div className="col-lg-2"></div>
+
+                <div className=" col-lg-1">
+                    <Button className="bg-green-800 hover:bg-green-900 ">
+                        <span className="material-symbols-outlined">&#xe429;</span>
+                        <span style={{ marginLeft: '22px' }}>Filtry</span>
+                    </Button>
+                </div>
+                <div className="col-lg-5"></div>
+                <div className=" col-lg-2">
                     <div className="btn-group d-flex segmented-button " role="group">
                         <Segmented rounded outline>
                             <SegmentedButton
+                                className={activeSegmented === 1 ? "bg-green-800 hover:bg-green-900" : "bg-transparent"}
                                 active={activeSegmented === 1}
                                 onClick={() => setActiveSegmented(1)}
                             >
                                 wycieczki
                             </SegmentedButton>
                             <SegmentedButton
+                                className={activeSegmented === 2 ? "bg-green-800 hover:bg-green-900" : "bg-transparent"}
                                 active={activeSegmented === 2}
                                 onClick={() => setActiveSegmented(2)}
                             >
@@ -31,7 +40,7 @@ export const Filters = () => {
                         </Segmented>
                     </div>
                 </div>
-                <div className="col-md-2 col-lg-2"></div>
+                <div className=" col-lg-2"></div>
             </div>
         </div>
     );
