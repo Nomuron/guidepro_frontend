@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../guidePRO_logo.png";
+import logo from "../images/guidePRO_logo.png";
 
 // export default function Header() {
 export const Header = () => {
@@ -7,7 +7,7 @@ export const Header = () => {
     return (
         <nav className="navbar bg-customDark sticky-top">
             <div className="container-fluid">
-                <div className="col-md-2 col-lg-2"></div> {/* Pusta przerwa 1/12 szerokości ekranu */}
+                <div className="col-md-2 col-lg-2"></div>
 
                 <div className="col-md-1 col-lg-1">
                     <a role="button" className="navbar-nav" href="#">
@@ -19,10 +19,9 @@ export const Header = () => {
                     <div role="button" className="navbar-nav" href="#">
                         <span className="material-symbols-outlined">login</span>
                     </div>
-                </div> {/* Pusta przerwa 1/12 szerokości ekranu */}
-                <div className="col-md-1 col-lg-1"></div> {/* Pusta przerwa 1/12 szerokości ekranu */}
+                </div>
+                <div className="col-md-1 col-lg-1"></div>
 
-                {/* Reszta elementów */}
             </div>
         </nav>
     );
