@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Wakacje nad Morzem Śródziemnym",
+    "price": 1500,
+    "description": "Spędź niezapomniane wakacje nad pięknym Morzem Śródziemnym. Wycieczka obejmuje wspaniałe plaże, wycieczki po historycznych miejscach i lokalne atrakcje.",
+    "imageLink": "https://wyprawy.pl/source/gallery/Tajlandia_-_Malezja_-_Singapur/Tajlandia%20Krabi%20plaa.jpeg",
+    "rating": 4.4
+  },
+  {
+    "title": "Wyprawa górska w Alpach",
+    "price": 2000,
+    "description": "Przeżyj przygodę życia podczas wyprawy górskiej w Alpach. Trekking, wspinaczka i niesamowite widoki na szczytach.",
+    "imageLink": "https://tripgo.pl/wp-content/uploads/2021/11/wycieczka-do-stavanger-samolotem-wylot-z-krakowa-bb-norwegia-i1-224-jpg.webp",
+    "rating": 2.9
+  },
+  {
+    "title": "Safari w Serengeti",
+    "price": 3000,
+    "description": "Odkryj piękno afrykańskiej przyrody podczas safari w Serengeti. Obserwuj dzikie zwierzęta i krajobrazy.",
+    "imageLink": "https://tripgo.pl/wp-content/uploads/2021/11/wycieczka-do-stavanger-samolotem-wylot-z-krakowa-bb-norwegia-i1-224-jpg.webp",
+    "rating": 4.7
+  },
+  {
+    "title": "Wycieczka kulturowa po Azji",
+    "price": 2500,
+    "description": "Zanurz się w bogatej kulturze Azji. Zwiedzaj starożytne świątynie, uczestnicz w tradycyjnych ceremoniach i poznawaj lokalne zwyczaje.",
+    "imageLink": "https://magazynfakty.pl/wp-content/uploads/2022/01/spacer-w-gorach-800x452.jpeg",
+    "rating": 4.6
+  },
+  {
+    "title": "Wypad nad jeziora Skandynawii",
+    "price": 1800,
+    "description": "Odpocznij na spokojnych brzegach jezior Skandynawii. Łowienie ryb, rejsy łodzią i nocleg w przytulnych chatkach.",
+    "imageLink": "https://magazynfakty.pl/wp-content/uploads/2022/01/spacer-w-gorach-800x452.jpeg",
+    "rating": 4.5
+  },
+  {
+    "title": "Wakacje nad Morzem Śródziemnym",
+    "price": 1500,
+    "description": "Spędź niezapomniane wakacje nad pięknym Morzem Śródziemnym. Wycieczka obejmuje wspaniałe plaże, wycieczki po historycznych miejscach i lokalne atrakcje.",
+    "imageLink": "https://wyprawy.pl/source/gallery/Tajlandia_-_Malezja_-_Singapur/Tajlandia%20Krabi%20plaa.jpeg",
+    "rating": 4.8
+  },
+  {
+    "title": "Wyprawa górska w Alpach",
+    "price": 2000,
+    "description": "Przeżyj przygodę życia podczas wyprawy górskiej w Alpach. Trekking, wspinaczka i niesamowite widoki na szczytach.",
+    "imageLink": "https://tripgo.pl/wp-content/uploads/2021/11/wycieczka-do-stavanger-samolotem-wylot-z-krakowa-bb-norwegia-i1-224-jpg.webp",
+    "rating": 4.9
+  }
+]

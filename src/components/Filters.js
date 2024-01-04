@@ -7,21 +7,24 @@ export const Filters = () => {
     const [activeSegmented, setActiveSegmented] = useState(1);
     return (
 
-        <div className="navbar bg-customDark sticky-top">
-            <div id="filters" className="col-md-12 col-lg-12 position-relative container-fluid"
+        <>
+            <div id="filters" className=" position-relative container-fluid"
                  style={{height: '50px'}}>
+                <div className="row align-items-center">
                 <div className="col-lg-2"></div>
 
-                <div className=" col-lg-1">
+                <div className=" col-lg-1 ">
                     <Button className="bg-green-800 hover:bg-green-900 ">
                         <span className="material-symbols-outlined">&#xe429;</span>
                         <span style={{ marginLeft: '22px' }}>Filtry</span>
                     </Button>
                 </div>
+
                 <div className="col-lg-5"></div>
+
                 <div className=" col-lg-2">
-                    <div className="btn-group d-flex segmented-button " role="group">
-                        <Segmented rounded outline>
+                    <div className="btn-group d-flex segmented-button  " role="group">
+                        <Segmented rounded outline >
                             <SegmentedButton
                                 className={activeSegmented === 1 ? "bg-green-800 hover:bg-green-900" : "bg-transparent"}
                                 active={activeSegmented === 1}
@@ -41,7 +44,9 @@ export const Filters = () => {
                     </div>
                 </div>
                 <div className=" col-lg-2"></div>
+                </div>
             </div>
-        </div>
+
+        </>
     );
 };

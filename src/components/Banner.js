@@ -7,7 +7,7 @@ export const Banner = () => {
     const backgroundImageUrl = '../images/banner.jpg';
 
     return (
-        <div className="navbar bg-customDark sticky-top">
+        <div className="navbar bg-customDark ">
 
                 <div id="banner" className="col-md-12 col-lg-12 position-relative container-fluid" style={{ height: '200px' }}>
 
