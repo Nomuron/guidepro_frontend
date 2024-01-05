@@ -14,7 +14,7 @@ export const Filters = () => {
                 <div className="col-lg-2"></div>
 
                 <div className=" col-lg-1 ">
-                    <Button className="bg-green-800 hover:bg-green-900 ">
+                    <Button className="bg-green-900 hover:bg-green-1000 ">
                         <span className="material-symbols-outlined">&#xe429;</span>
                         <span style={{ marginLeft: '22px' }}>Filtry</span>
                     </Button>
@@ -26,14 +26,14 @@ export const Filters = () => {
                     <div className="btn-group d-flex segmented-button  " role="group">
                         <Segmented rounded outline >
                             <SegmentedButton
-                                className={activeSegmented === 1 ? "bg-green-800 hover:bg-green-900" : "bg-transparent"}
+                                className={activeSegmented === 1 ? "bg-green-900 hover:bg-green-1000" : "bg-transparent text-green-900"}
                                 active={activeSegmented === 1}
                                 onClick={() => setActiveSegmented(1)}
                             >
                                 wycieczki
                             </SegmentedButton>
                             <SegmentedButton
-                                className={activeSegmented === 2 ? "bg-green-800 hover:bg-green-900" : "bg-transparent"}
+                                className={activeSegmented === 2 ? "bg-green-900 hover:bg-green-1000" : "bg-transparent text-green-900"}
                                 active={activeSegmented === 2}
                                 onClick={() => setActiveSegmented(2)}
                             >

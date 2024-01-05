@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card } from 'konsta/react'; // Załóżmy, że to jest poprawny import zewnętrznej biblioteki
+import { Card } from 'konsta/react';
 import {StarRating} from "./StarRating"
 
 export const TripTile = ({ trips }) => {
@@ -22,9 +22,13 @@ export const TripTile = ({ trips }) => {
         <>
             {trips.map((trip, index) => (
                 <Card
+
                     key={index}
                     outline
                     className="relative"
+                    style={{
+                        backgroundColor: "whitesmoke",
+                    }}
                 >
                     <div
                         className="h-48 relative"
@@ -35,7 +39,7 @@ export const TripTile = ({ trips }) => {
                         }}
                     >
                         <div className="absolute bottom-0 right-0 m-1">
-                            <div>
+                            <div className="">
                                 <img
                                     src="https://betibu.pl/wp-content/uploads/2016/10/twarz-e1484244607218-300x297.jpg"
                                     alt={trip.title}
@@ -60,13 +64,12 @@ export const TripTile = ({ trips }) => {
                             </button>
                         </div>
                     </div>
-                    <div className="p-4">
+                    <div className="pt-4 pr-4 pb-0 pl-4"  >
                         <div className="font-bold mb-2">{trip.title}</div>
-                        <p>{shortenDescription(trip.description)}</p>
-                        <div className="flex justify-between text-gray-500 mt-3">
+                        <p className="pt-2">{shortenDescription(trip.description)}</p>
+                        <div className="flex justify-between text-gray-800 mt-3 pt-4 text-base">
                             <div>{trip.price} zł/osoba</div>
                             <StarRating trip={trip}/>
-                            {/*<div>{trip.rating}</div>*/}
                         </div>
                     </div>
                 </Card>

@@ -57,11 +57,25 @@
 
 .navbar {
     background-color: whitesmoke;
+    /*background-color: dark;*/
 }
 .star {
-    color: #ccc; /* Kolor pustych gwiazdek */
+    color: #ccc;
 }
 
 .filled {
-    color: gold; /* Kolor wypełnionych gwiazdek */
+    color: gold;
 }
+
+.ourGreen {
+    color: #00493a;
+}
+.ourGrey {
+    color: whitesmoke;
+}
+
+
+#logo {
+    color: #00493a;
+}
+

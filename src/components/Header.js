@@ -15,7 +15,7 @@ export const Header = () => {
                 <div className="col-md-6 col-lg-6"></div>
                 <div className="col-md-1 col-lg-1 d-flex justify-content-end">
                     <div role="button" className="navbar-nav">
-                        <span className="material-symbols-outlined">login</span>
+                        <span  className="material-symbols-outlined ourGreen">login</span>
                     </div>
                 </div>
                 <div className="col-md-2 col-lg-2"></div> {/* Pusta kolumna Bootstrap */}
